@@ -53,7 +53,7 @@ export const App = () => {
         disabled={incompleteTodos.length >= 5}
       />
       {incompleteTodos.length >= 5 && (
-        <p style={{ color: "red" }}>登録できるtodo5個までだよ！</p>
+        <p style={{ color: "red" }}>登録できるtodo5個まで！</p>
       )}
       <IncompleteTodo
         todos={incompleteTodos}
