@@ -9,6 +9,7 @@ export const App = () => {
   const [incompleteTodos, setIncompleteTodos] = useState([]);
   const [completeTodos, setCompleteTodos] = useState([]);
 
+  // インプットボックスのvalue変更される度にStateを変更
   const onChangeTodoText = (event) => setTodoText(event.target.value);
 
   //追加ボタンのイベント
@@ -44,6 +45,7 @@ export const App = () => {
     setCompleteTodos(newCompleteTodos);
     setIncompleteTodos(newIncompleteTodos);
   };
+
   return (
     <>
       <InputTodo
