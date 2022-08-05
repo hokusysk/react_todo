@@ -5,8 +5,8 @@ import { IncompleteTodo } from "./components/incompleteTodo";
 import { CompleteTodo } from "./components/completeTodo";
 
 export const App = () => {
-  const [todoText, setTodoText] = useState([""]);
-  const [incompleteTodos, setIncompleteTodos] = useState([]);
+  const [todoText, setTodoText] = useState("");
+  const [incompleteTodos, setIncompleteTodos] = useState([]); // 初期値に[""]は×
   const [completeTodos, setCompleteTodos] = useState([]);
 
   // インプットボックスのvalue変更される度にStateを変更
